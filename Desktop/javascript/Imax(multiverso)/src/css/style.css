@@ -1,0 +1,82 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: cursive;
+    background-image: linear-gradient(to left, #111111, #111011, #101012, #0f0f12, #0e0f13, #0e0f13, #0e0f14, #0e0f14, #0f0f14, #0f0f14, #101014, #101014);
+    background-attachment: fixed;
+    color: #d7d7d7;
+    display: flex;
+    justify-content: center;
+
+    font-family: "Rubik";
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 6rem;
+}
+
+
+
+header ul {
+    display: flex;
+    gap: 4rem;
+    font-size: 2em;
+    margin: 5rem;
+}
+
+.banner__content {
+    position: fixed;
+
+    background:
+        linear-gradient(to right,
+            rgba(0, 0, 0, .3), rgb(10, 10, 10, .7)),
+        url("../assets/images/recursos/Banner.png");
+    height: 40rem;
+    width: 100vw;
+    left: 0;
+    background-size: cover;
+    z-index: -111;
+    background-position: left;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner__content::after {
+    z-index: -2;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 40rem;
+    width: 80vw;
+    background: linear-gradient(-233deg, rgba(0, 0, 0, .6) 50%, rgba(0, 0, 0, 0) 60%) no-repeat;
+}
+
+
+.banner__information {
+    position: absolute;
+    left: 4rem;
+}
+
+.banner__content h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.banner__content .description {
+    margin-top: 2rem;
+    font-size: 2rem;
+    word-break: normal;
+    line-height: 2.7rem;
+    width: 45rem;
+}
