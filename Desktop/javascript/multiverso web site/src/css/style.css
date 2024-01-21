@@ -1,0 +1,109 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #181818;
+    background-attachment: fixed;
+    color: #d7d7d7;
+    display: block;
+
+    font-family: "Rubik";
+}
+
+.banner__content {
+    position: relative;
+
+    background:
+        linear-gradient(to right,
+            rgba(0, 0, 0, .3), rgb(10, 10, 10, .7)),
+        url("../assets/images/recursos/Banner.png");
+    height: 35rem;
+    width: 100vw;
+    left: 0;
+    background-size: cover;
+    z-index: -111;
+    background-position: left;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner__content::after {
+    z-index: -2;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 35rem;
+    width: 80vw;
+    background: linear-gradient(-233deg, rgba(0, 0, 0, .6) 50%, rgba(0, 0, 0, 0) 60%) no-repeat;
+}
+
+
+.banner__title {
+    margin-left: 5rem;
+}
+
+.banner__title {
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    font-family: "Black Ops One";
+}
+
+.banner__content .description {
+    margin-top: 2rem;
+    font-size: 2rem;
+    word-break: normal;
+    line-height: 2.7rem;
+    width: 45rem;
+}
+
+
+.apresentation, .organizacoes {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    width: 100vw;
+}
+.description__content{
+    display: flex;
+    gap: 7rem;
+}
+.description__content img{
+    width: 30rem;
+}
+.description{
+    font-family: "Rubik";
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+    width: 60rem;
+    padding: 3rem;
+}
+
+.apresentation h1, h2{
+    margin: 7.2rem 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.acm {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.acm h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.acm img {
+    width: 15rem;
+}
