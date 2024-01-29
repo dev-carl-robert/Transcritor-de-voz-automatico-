@@ -9,6 +9,8 @@
 
 body {
     background-image: linear-gradient(to right top, #264653, #225b68, #1c7079, #1b8786, #2a9d8f);
+    background-repeat: repeat;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -59,7 +61,7 @@ h1 {
     text-align: center;
     letter-spacing: 1px;
 }
-.mic{ 
+.mic__icon{ 
     border: none;
     background: none;
     color: #1b8786;
@@ -67,9 +69,19 @@ h1 {
     top: 18rem;
     right: 3.5rem;
     font-size: 3rem;
-    opacity: .6;
+    opacity: .7;
 }
-.mic:hover{
+.mic__icon:hover{
     opacity: 1;
     transform: scale(1.2);
+}
+p {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    z-index: 1;
+    color: #264653;
+    font-size: 1.5rem;
+    text-align: right;
+    font-family: cursive;
 }
