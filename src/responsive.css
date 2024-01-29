@@ -3,9 +3,6 @@
     .container {
         width: calc(100vw - 5rem);
     }
-    .mic__icon{
-        right: 2.5rem;
-    }
     ::placeholder{
     font-size: 2rem;
     }
